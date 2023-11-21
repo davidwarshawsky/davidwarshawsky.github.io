@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vi Commands for Mac</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      /* max-width: 600px; */
+      /* margin: 20px auto; */
+      /* padding: 20px; */
+      background-color: #f4f4f4;
+    }
+
+    .row {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+    .row-element{
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    h2 {
+      color: #0077cc;
+    }
+
+    code {
+      font-family: 'Courier New', monospace;
+      background-color: #f8f8f8;
+      padding: 2px 5px;
+      border-radius: 3px;
+    }
+    .container {
+      display: flex;
+      flex-direction: rows;
+
+      /* justify-content: space-between; */
+    }
+    .keyboard {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      justify-content: center;
+    }
+
+    .key {
+      width: 50px;
+      height: 50px;
+      border: 2px solid #333;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    /* .center-div {
+      padding-left: 2%;
+      padding-right: 2%;
+    } */
+    .preformatted {
+      white-space: pre;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Vi Commands for Mac</h1>
+
+  <h2>Command Modes</h2>
+  <ul>
+    <li><code>i</code> - Insert mode</li>
+    <li><code>Esc</code> - Command mode</li>
+    <li><code>:wq</code> - Save and quit</li>
+    <li><code>:q!</code> - Quit without saving</li>
+  </ul>
+
+  <h2>Movement</h2>
+  <ul>
+    <li><code>h</code> - Move left</li>
+    <li><code>j</code> - Move down</li>
+    <li><code>k</code> - Move up</li>
+    <li><code>l</code> - Move right</li>
+    <li><code>gg</code> - Move to the beginning</li>
+    <li><code>G</code> - Move to the end</li>
+  </ul>
+
+  <h1>Directions Keys on Keyboard</h1>
+
+  <div class="keyboard">
+    <div class="key">&larr;</div>
+    <div class="key">&darr;</div>
+    <div class="key">&uarr;</div>
+    <div class="key">&rarr;</div>
+    <div class="key">H</div>
+    <div class="key">J</div>
+    <div class="key">K</div>
+    <div class="key">L</div>
+  </div>
+
+  <div class="row">
+    <div>
+      <p> - - - - - -</p>
+      <p class="preformatted">|   K<span class="arrow">&uarr;</span>    |</p>
+      <p> - - - - - -</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="row-element">
+      <p> - - - - - -</p>
+      <p class="preformatted">|   <span class="arrow">&larr;</span>H    |</p>
+      <p> - - - - - -</p>
+    </div>
+    <div class="row-element">
+      <p> - - - - - -</p>
+      <p class="preformatted">|   <span class="arrow">&darr;</span>J    |</p>
+      <p> - - - - - -</p>
+    </div>
+    <div class="row-element">
+      <p> - - - - - -</p>
+      <p class="preformatted">|   <span class="arrow">&rarr;</span>L    |</p>
+      <p> - - - - - -</p>
+    </div>
+  </div>
+
+  <h2>Edit</h2>
+  <ul>
+    <li><code>x</code> - Delete character</li>
+    <li><code>dd</code> - Delete line</li>
+    <li><code>yy</code> - Copy line</li>
+    <li><code>p</code> - Paste</li>
+    <li><code>:m,n d</code> - Delete multiple lines (replace m and n with line numbers)</li>
+  </ul>
+
+  <h2>Search and Replace</h2>
+  <ul>
+    <li><code>/</code> - Search forward</li>
+    <li><code>?</code> - Search backward</li>
+    <li><code>n</code> - Next match</li>
+    <li><code>N</code> - Previous match</li>
+    <li><code>:s/search/replace/</code> - Replace</li>
+  </ul>
+
+  <h2>Save and Quit</h2>
+  <ul>
+    <li><code>:w</code> - Save</li>
+    <li><code>:q</code> - Quit</li>
+  </ul>
+
+</body>
+</html>
+
